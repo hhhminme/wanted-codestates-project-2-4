@@ -1,3 +1,3 @@
 import styled from "styled-components";
 
-export default CarouselWrap = styled.div``;
+export const CarouselWrap = styled.div``;

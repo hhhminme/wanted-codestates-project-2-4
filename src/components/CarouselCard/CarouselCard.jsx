@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import Flicking, { ViewportSlot } from "@egjs/react-flicking";
 import { AutoPlay, Pagination } from "@egjs/flicking-plugins";
-import "@egjs/react-flicking/dist/flicking.css";
 
+import * as S from "./style";
 function CarouselCard({ likeData }) {
   const plugins = [
     new AutoPlay({ duration: 2000, direction: "NEXT", stopOnHover: false }),
   ];
   return (
-    <CarouselWrap>
+    <S.CarouselWrap>
       <Flicking
         plugins={plugins}
         align="prev"
@@ -27,7 +27,7 @@ function CarouselCard({ likeData }) {
             </div>
           ))}
       </Flicking>
-    </ㅊ>
+    </S.CarouselWrap>
   );
 }
 
